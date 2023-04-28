@@ -1,0 +1,28 @@
+{
+  "name" : "jobsito2",
+  "description" : "",
+  "role" : "arn:aws:iam::491583487605:role/LabRole",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "glueray",
+    "scriptLocation" : "s3://aws-glue-assets-491583487605-us-east-1/scripts/jobsito2.py",
+    "pythonVersion" : "3.9"
+  },
+  "defaultArguments" : { },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 6,
+  "timeout" : 480,
+  "maxCapacity" : 6.0,
+  "glueVersion" : "4.0",
+  "numberOfWorkers" : 3,
+  "workerType" : "Z.2X",
+  "executionClass" : "STANDARD",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "Parcial2BGD",
+    "branch" : "main",
+    "folder" : "Job2"
+  }
+}
